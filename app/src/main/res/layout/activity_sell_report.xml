@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SellReportActivity">
+    <RelativeLayout
+        android:id="@+id/market_name_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimense50dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+    <AutoCompleteTextView
+        android:id="@+id/auto_txt_search_sell_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="8dp"
+        android:background="@drawable/edittext_frame"
+        android:drawableLeft="@drawable/ic_search_black_24dp" />
+        <Button
+            android:id="@+id/btn_filter_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Filter"
+            android:textAllCaps="false"
+            android:textColor="@color/black_color"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button_at_right"
+            />
+    </RelativeLayout>
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="56dp"-->
+<!--        android:text="home"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:background="?android:attr/windowBackground"-->
+<!--        android:foreground="?attr/selectableItemBackground"-->
+<!--        app:elevation="8dp"-->
+<!--        app:itemBackground="@color/white_color"-->
+<!--        app:itemTextColor="@android:color/black"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        app:menu="@menu/navigation" />-->
+
+</LinearLayout>

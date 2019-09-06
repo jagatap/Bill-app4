@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/navigation_home"
+            android:title="Sell Report"
+            android:icon="@drawable/ic_https_black_24dp"
+            app:showAsAction="always|withText"/>
+
+        <item
+            android:id="@+id/navigation_gst_sell"
+            android:title="GST Report"
+            app:showAsAction="always|withText"/>
+
+
+</menu>

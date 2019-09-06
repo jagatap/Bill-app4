@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimens20dp"/>
+<LinearLayout
+    android:layout_marginTop="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/makeinvoicelinearlayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:elevation="16dp"
+            android:layout_margin="@dimen/dimens10dp"
+            android:background="@drawable/round_corners_for_tab">
+            <ImageView
+                android:layout_margin="@dimen/dimens10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/makeivoiceico"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make Invoice"
+                android:textSize="@dimen/dimens18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimens10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/additemlinearlayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_margin="@dimen/dimens10dp"
+            android:background="@drawable/round_corners_for_tab">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/add_circle_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:textSize="@dimen/dimens18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimens10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sellreportlinearlayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_margin="@dimen/dimens10dp"
+            android:background="@drawable/round_corners_for_tab">
+            <ImageView
+                android:layout_margin="@dimen/dimens10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sellreporticon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell Report"
+                android:textSize="@dimen/dimens18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimens10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usersettinglinearlayout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:layout_margin="@dimen/dimens10dp"
+            android:background="@drawable/round_corners_for_tab">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight=".5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/user"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Setting"
+                android:textSize="@dimen/dimens18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimens10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
