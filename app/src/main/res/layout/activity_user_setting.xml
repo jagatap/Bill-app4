@@ -23,6 +23,7 @@
             android:textSize="@dimen/dimens18sp"
             android:textColor="#ffffff"/>
         <TextView
+            android:id="@+id/txt_userName_user_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Priya"

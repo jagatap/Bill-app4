@@ -35,28 +35,35 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/rounded_button_at_right"
             />
-    </RelativeLayout>
-<!--    <FrameLayout-->
-<!--        android:id="@+id/fragment_container"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginBottom="56dp"-->
-<!--        android:text="home"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
 
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:id="@+id/navigation"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="56dp"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        android:background="?android:attr/windowBackground"-->
-<!--        android:foreground="?attr/selectableItemBackground"-->
-<!--        app:elevation="8dp"-->
-<!--        app:itemBackground="@color/white_color"-->
-<!--        app:itemTextColor="@android:color/black"-->
-<!--        app:labelVisibilityMode="labeled"-->
-<!--        app:menu="@menu/navigation" />-->
+
+        <Button android:id="@+id/btn_sell_report"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Sell Report"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:layout_alignParentBottom="true" />
+        <Button android:id="@+id/btn_gst_report"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="GST Report"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:layout_toRightOf="@+id/btn_sell_report"
+            android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
 
 </LinearLayout>

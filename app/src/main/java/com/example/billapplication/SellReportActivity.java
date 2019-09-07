@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class SellReportActivity extends AppCompatActivity  {
-    Button btn_filter_search;
+    Button btn_filter_search,btn_sell_report,btn_gst_report;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,58 +55,41 @@ public class SellReportActivity extends AppCompatActivity  {
        // final BottomNavigationView navigation = findViewById(R.id.navigation);
 
         btn_filter_search = (Button) findViewById(R.id.btn_filter_search);
+        btn_gst_report = (Button) findViewById(R.id.btn_gst_report);
+        btn_sell_report = (Button) findViewById(R.id.btn_sell_report);
+        btn_sell_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // btn_sell_report.setBackgroundColor(Color.RED);
+                startActivity(new Intent(SellReportActivity.this,SellReportActivity.class));
+
+            }
+        });
+        btn_gst_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // btn_gst_report.setBackgroundColor(Color.RED);
+                startActivity(new Intent(SellReportActivity.this,GstActivity.class));
+            }
+        });
         btn_filter_search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SellReportActivity.this, FilterSellReport.class));
             }
         });
-       // navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+//        btn_gst_report.setOnTouchListener(new View.OnTouchListener() {
+//
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                btn_gst_report.setPressed(true);
+//                btn_sell_report.setPressed(false);
+//                return true;
+//            }
+//        });
 
 
     }
 
-//    @Override
-//    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//        return false;
-//    }
-//
-//    @Override
-//    public void onPointerCaptureChanged(boolean hasCapture) {
-//
-//    }
-//    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-//            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-//
-//        @Override
-//        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//            Fragment fragment = null;
-//
-//            switch (item.getItemId()) {
-//                case R.id.navigation_home:
-//                    fragment = new HomeFragment();
-//                    break;
-//
-//
-//                case R.id.navigation_gst_sell:
-//                    fragment = new GstSellReportFragment();
-//                    break;
-//
-//
-//            }
-//
-//            return loadFragment(fragment);
-//        }
-//    };
-//    private boolean loadFragment(Fragment fragment) {
-//        //switching fragment
-//        if (fragment != null) {
-//            getSupportFragmentManager()
-//                    .beginTransaction()
-//                    .replace(R.id.fragment_container, fragment)
-//                    .commit();
-//            return true;
-//        }
-//        return false;
-//    }
+
 }

@@ -15,11 +15,13 @@ import android.widget.TextView;
 public class UserSettingActivity extends AppCompatActivity {
 Button btn_edit_market_name;
 EditText etx_market_name;
-TextView txt_help,txt_feedback;
+TextView txt_help,txt_feedback,txt_userName_user_setting;
+    public static PrefConfig prefConfig;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_setting);
+        prefConfig=new PrefConfig(this);
         //setting title on action bar and back button
         if (getSupportActionBar() != null) {
             ActionBar actionBar = getSupportActionBar();
@@ -56,7 +58,10 @@ TextView txt_help,txt_feedback;
         btn_edit_market_name=(Button)findViewById(R.id.btn_edit_market_name);
         etx_market_name=(EditText) findViewById(R.id.etx_market_name);
         txt_feedback=(TextView) findViewById(R.id.txt_feedback);
+        txt_userName_user_setting=(TextView) findViewById(R.id.txt_userName_user_setting);
         txt_help=(TextView) findViewById(R.id.txt_help);
+        txt_userName_user_setting.setText(UserSettingActivity.prefConfig.readUserName());
+
         txt_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
